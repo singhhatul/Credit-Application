@@ -1,0 +1,49 @@
+<div class="login-box">
+    <h2>Loan Eligibility</h2>
+    <form (ngSubmit) = "onSubmit()"> 
+      <div class="user-box">
+        <input type="text" id="firstname" 
+        [(ngModel)] = "credit.firstName" name ="firstname">
+        <label>First Name (As per PAN Card)</label>
+        
+      </div>
+      <div class="user-box">
+        <input type="text" id="lastname" 
+        [(ngModel)] = "credit.lastName" name ="lastname">
+        <label>Last Name (As per PAN Card)</label>
+      </div>
+      <div class="user-box">
+        <input type="text" id="gender" 
+        [(ngModel)] = "credit.gender" name ="gender">
+        <label>Gender</label>
+      </div>
+      <div class="user-box">
+        <input type="date" id="dob" 
+        [(ngModel)] = "credit.dob" name ="dob">
+        <label>Date Of Birth</label>
+      </div>
+      <div class="user-box">
+        <input type="text" id="company" 
+        [(ngModel)] = "credit.companyName" name ="company">
+        <label>Company Name</label>
+      </div>
+      <div class="user-box">
+        <input type="text" id="PAN" 
+        [(ngModel)] = "credit.panCard" name ="PAN">
+        <label>PAN Card</label>
+      </div>
+      <div class="user-box">
+        <input type="number" id="income" 
+        [(ngModel)] = "credit.salary" name ="income">
+        <label>Gross Income</label>
+      </div>
+      <div class="user-box">
+        <input type="email" id="email" 
+        [(ngModel)] = "credit.email" name ="email">
+        <label>Email</label>
+      </div>
+      <div class="user-box">
+      <button class="btn" type="submit" value="Check Eligibility"></button>
+    </div>
+    </form>
+  </div>
